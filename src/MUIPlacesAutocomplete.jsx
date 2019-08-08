@@ -269,6 +269,7 @@ export default class MUIPlacesAutocomplete extends React.Component {
         onSelect={this.onSuggestionSelected}
         onInputValueChange={this.onInputValueChange}
         itemToString={suggestion => (suggestion ? suggestion.description : '')}
+        defaultInputValue={ this.props.defaultInputValue }
         render={this.renderAutocomplete}
         {...controlProps}
       />
